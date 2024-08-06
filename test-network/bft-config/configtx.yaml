@@ -87,6 +87,143 @@ Organizations:
       Endorsement:
         Type: Signature
         Rule: "OR('Org2MSP.peer')"
+  - &Org3
+    Name: Org3MSP
+    ID: Org3MSP
+    MSPDir: ../organizations/peerOrganizations/org3.example.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('Org3MSP.admin', 'Org3MSP.peer', 'Org3MSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('Org3MSP.admin', 'Org3MSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('Org3MSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('Org3MSP.peer')"
+  - &Org4
+    Name: Org4MSP
+    ID: Org4MSP
+    MSPDir: ../organizations/peerOrganizations/org4.example.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('Org4MSP.admin', 'Org4MSP.peer', 'Org4MSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('Org4MSP.admin', 'Org4MSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('Org4MSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('Org4MSP.peer')"
+  - &Org5
+    Name: Org5MSP
+    ID: Org5MSP
+    MSPDir: ../organizations/peerOrganizations/org5.example.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('Org5MSP.admin', 'Org5MSP.peer', 'Org5MSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('Org5MSP.admin', 'Org5MSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('Org5MSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('Org5MSP.peer')"
+  - &Org6
+    Name: Org6MSP
+    ID: Org6MSP
+    MSPDir: ../organizations/peerOrganizations/org6.example.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('Org6MSP.admin', 'Org6MSP.peer', 'Org6MSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('Org6MSP.admin', 'Org6MSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('Org6MSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('Org6MSP.peer')"
+  - &Org7
+    Name: Org7MSP
+    ID: Org7MSP
+    MSPDir: ../organizations/peerOrganizations/org7.example.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('Org7MSP.admin', 'Org7MSP.peer', 'Org7MSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('Org7MSP.admin', 'Org7MSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('Org7MSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('Org7MSP.peer')"
+  - &Org8
+    Name: Org8MSP
+    ID: Org8MSP
+    MSPDir: ../organizations/peerOrganizations/org8.example.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('Org8MSP.admin', 'Org8MSP.peer', 'Org8MSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('Org8MSP.admin', 'Org8MSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('Org8MSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('Org8MSP.peer')"
+  - &Org9
+    Name: Org9MSP
+    ID: Org9MSP
+    MSPDir: ../organizations/peerOrganizations/org9.example.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('Org9MSP.admin', 'Org9MSP.peer', 'Org9MSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('Org9MSP.admin', 'Org9MSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('Org9MSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('Org9MSP.peer')"
+  - &Org10
+    Name: Org10MSP
+    ID: Org10MSP
+    MSPDir: ../organizations/peerOrganizations/org10.example.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('Org10MSP.admin', 'Org10MSP.peer', 'Org10MSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('Org10MSP.admin', 'Org10MSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('Org10MSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('Org10MSP.peer')"
+
 ################################################################################
 #
 #   SECTION: Capabilities
@@ -309,4 +446,12 @@ Profiles:
       Organizations:
         - *Org1
         - *Org2
+        - *Org3
+        - *Org4
+        - *Org5
+        - *Org6
+        - *Org7
+        - *Org8
+        - *Org9
+        - *Org10
       Capabilities: *ApplicationCapabilities

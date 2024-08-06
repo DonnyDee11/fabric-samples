@@ -73,11 +73,36 @@ checkPrereqs
 
 PACKAGE_ID=$(peer lifecycle chaincode calculatepackageid ${CC_NAME}.tar.gz)
 
-## Install chaincode on peer0.org1 and peer0.org2
+## Install chaincode on all org's peers0
 infoln "Installing chaincode on peer0.org1..."
 installChaincode 1
+
 infoln "Install chaincode on peer0.org2..."
 installChaincode 2
+
+infoln "Install chaincode on peer0.org3..."
+installChaincode 3
+
+infoln "Install chaincode on peer0.org4..."
+installChaincode 4
+
+infoln "Install chaincode on peer0.org5..."
+installChaincode 5
+
+infoln "Install chaincode on peer0.org6..."
+installChaincode 6
+
+infoln "Install chaincode on peer0.org7..."
+installChaincode 7
+
+infoln "Install chaincode on peer0.org8..."
+installChaincode 8
+
+infoln "Install chaincode on peer0.org9..."
+installChaincode 9
+
+infoln "Install chaincode on peer0.org10..."
+installChaincode 10
 
 resolveSequence
 
@@ -92,8 +117,16 @@ approveForMyOrg 1
 checkCommitReadiness 1 "\"Org1MSP\": true" "\"Org2MSP\": false"
 checkCommitReadiness 2 "\"Org1MSP\": true" "\"Org2MSP\": false"
 
-## now approve also for org2
+## now approve also for other orgs
 approveForMyOrg 2
+approveForMyOrg 3
+approveForMyOrg 4
+approveForMyOrg 5
+approveForMyOrg 6
+approveForMyOrg 7
+approveForMyOrg 8
+approveForMyOrg 9
+approveForMyOrg 10
 
 ## check whether the chaincode definition is ready to be committed
 ## expect them both to have approved
@@ -101,7 +134,7 @@ checkCommitReadiness 1 "\"Org1MSP\": true" "\"Org2MSP\": true"
 checkCommitReadiness 2 "\"Org1MSP\": true" "\"Org2MSP\": true"
 
 ## now that we know for sure both orgs have approved, commit the definition
-commitChaincodeDefinition 1 2
+commitChaincodeDefinition 1 2 3 4 5 6 7 8 9 10
 
 ## query on both orgs to see that the definition committed successfully
 queryCommitted 1
@@ -112,7 +145,7 @@ queryCommitted 2
 if [ "$CC_INIT_FCN" = "NA" ]; then
   infoln "Chaincode initialization is not required"
 else
-  chaincodeInvokeInit 1 2
+  chaincodeInvokeInit 1 2 3 4 5 6 7 8 9 10
 fi
 
 exit 0

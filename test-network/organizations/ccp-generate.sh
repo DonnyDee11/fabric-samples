@@ -47,7 +47,7 @@ echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM)" > organizations/peerOrga
 # --- ORG 3 ---
 ORG=3
 P0PORT=11051
-CAPORT=9054
+CAPORT=11054
 PEERPEM=organizations/peerOrganizations/org3.example.com/tlsca/tlsca.org3.example.com-cert.pem
 CAPEM=organizations/peerOrganizations/org3.example.com/ca/ca.org3.example.com-cert.pem
 
@@ -57,7 +57,7 @@ echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM)" > organizations/peerOrga
 # --- ORG 4 ---
 ORG=4
 P0PORT=13051
-CAPORT=10054
+CAPORT=13054
 PEERPEM=organizations/peerOrganizations/org4.example.com/tlsca/tlsca.org4.example.com-cert.pem
 CAPEM=organizations/peerOrganizations/org4.example.com/ca/ca.org4.example.com-cert.pem
 
@@ -67,7 +67,7 @@ echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM)" > organizations/peerOrga
 # --- ORG 5 ---
 ORG=5
 P0PORT=15051
-CAPORT=11054
+CAPORT=15054
 PEERPEM=organizations/peerOrganizations/org5.example.com/tlsca/tlsca.org5.example.com-cert.pem
 CAPEM=organizations/peerOrganizations/org5.example.com/ca/ca.org5.example.com-cert.pem
 
@@ -77,7 +77,7 @@ echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM)" > organizations/peerOrga
 # --- ORG 6 ---
 ORG=6
 P0PORT=17051
-CAPORT=12054
+CAPORT=17054
 PEERPEM=organizations/peerOrganizations/org6.example.com/tlsca/tlsca.org6.example.com-cert.pem
 CAPEM=organizations/peerOrganizations/org6.example.com/ca/ca.org6.example.com-cert.pem
 
@@ -87,7 +87,7 @@ echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM)" > organizations/peerOrga
 # --- ORG 7 ---
 ORG=7
 P0PORT=19051
-CAPORT=13054
+CAPORT=19054
 PEERPEM=organizations/peerOrganizations/org7.example.com/tlsca/tlsca.org7.example.com-cert.pem
 CAPEM=organizations/peerOrganizations/org7.example.com/ca/ca.org7.example.com-cert.pem
 
@@ -97,7 +97,7 @@ echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM)" > organizations/peerOrga
 # --- ORG 8 ---
 ORG=8
 P0PORT=21051
-CAPORT=14054
+CAPORT=21054
 PEERPEM=organizations/peerOrganizations/org8.example.com/tlsca/tlsca.org8.example.com-cert.pem
 CAPEM=organizations/peerOrganizations/org8.example.com/ca/ca.org8.example.com-cert.pem
 
@@ -107,7 +107,7 @@ echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM)" > organizations/peerOrga
 # --- ORG 9 ---
 ORG=9
 P0PORT=23051
-CAPORT=15054
+CAPORT=23054
 PEERPEM=organizations/peerOrganizations/org9.example.com/tlsca/tlsca.org9.example.com-cert.pem
 CAPEM=organizations/peerOrganizations/org9.example.com/ca/ca.org9.example.com-cert.pem
 
@@ -117,7 +117,7 @@ echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM)" > organizations/peerOrga
 # --- ORG 10 ---
 ORG=10
 P0PORT=25051
-CAPORT=16054
+CAPORT=25054
 PEERPEM=organizations/peerOrganizations/org10.example.com/tlsca/tlsca.org10.example.com-cert.pem
 CAPEM=organizations/peerOrganizations/org10.example.com/ca/ca.org10.example.com-cert.pem
 

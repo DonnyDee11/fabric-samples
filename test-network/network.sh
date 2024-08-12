@@ -325,9 +325,29 @@ function createOrgs() {
 
     createOrg4
     
-    infoln "Creating Org5 to Org10 Identities"
+    infoln "Creating Org5 Identities"
 
-    createOrg
+    createOrg5
+
+    infoln "Creating Org6 Identities"
+
+    createOrg6
+
+    infoln "Creating Org7 Identities"
+
+    createOrg7
+
+    infoln "Creating Org8 Identities"
+
+    createOrg8
+
+    infoln "Creating Org9 Identities"
+
+    createOrg9
+
+    infoln "Creating Org10 Identities"
+
+    createOrg10
 
     infoln "Creating Orderer Org Identities"
 
